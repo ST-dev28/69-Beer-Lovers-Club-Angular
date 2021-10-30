@@ -1,0 +1,148 @@
+/* DashboardComponent's private CSS styles */
+/*
+h2 {
+    text-align: center;
+}
+
+.heroes-menu {
+    padding: 0;
+    margin: auto;
+    max-width: 1000px;
+    /* flexbox 
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: flex-start;
+    align-items: flex-start;
+}
+
+a {
+    background-color: #3f525c;
+    border-radius: 2px;
+    padding: 1rem;
+    font-size: 1.2rem;
+    text-decoration: none;
+    display: inline-block;
+    color: #fff;
+    text-align: center;
+    width: 100%;
+    min-width: 70px;
+    margin: .5rem auto;
+    box-sizing: border-box;
+    /* flexbox 
+    order: 0;
+    flex: 0 1 auto;
+    align-self: auto;
+}
+
+@media (min-width: 600px) {
+    a {
+        width: 18%;
+        box-sizing: content-box;
+    }
+}
+
+a:hover {
+    background-color: #000;
+}
+*/
+
+h2 {
+    text-align: center;
+    font-size: 48px;
+    color: rgba(153, 33, 33);
+    font-style: italic;
+}
+.filters {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding-left: 20px;
+}
+
+::ng-deep {
+    .form-infix {
+        background-color: #3f51b5;
+    }
+    .select-value,
+    .select-arrow,
+    .form-hide-placeholder .select-placeholder,
+    .form-appearance-legacy .form-label {
+        color: #fff !important;
+        opacity: 1;
+    }
+    .form-infix {
+        border-color: #fff !important;
+        border-top: none;
+        padding-left: 5px !important;
+    }
+    .form-appearance-legacy .form-label {
+        padding-left: 5px;
+    }
+    .form-appearance-legacy .form-underline {
+        background-color: #fff !important;
+    }
+}
+
+.beers {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 20px auto;
+}
+
+.beer {
+    width: 280px;
+    margin: 10px;
+    height: 330px;
+    overflow: hidden;
+    border-radius: 5px;
+    background-color: #202020;
+    box-shadow: 4px 3px 8px 0px rgb(200 152 44 / 22%);
+    transition-duration: 0.3s;
+    cursor: pointer;
+    &:hover {
+        box-shadow: 4px 3px 11px 6px rgb(200 152 44 / 46%);
+        transform: translateY(-3px);
+    }
+    &-thumb-container {
+        background-color: #000;
+        position: relative;
+        height: 172px;
+        color: #fff;
+        text-align: center;
+    }
+    &-thumbnail {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        height: 172px;
+    }
+    &-description {
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        height: 157px;
+    }
+    &-name {
+        color: rgba(153, 33, 33);
+        font-weight: 700;
+        font-size: 22px;
+        margin-bottom: 20px;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        font-style: italic;
+    }
+    &-platforms {
+        display: flex;
+    }
+    &-platform {
+        width: 20px;
+        margin-right: 10px;
+    }
+}

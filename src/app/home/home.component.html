@@ -1,0 +1,21 @@
+<!--<h2>Sorts</h2>
+<div class="heroes-menu">
+    <a *ngFor="let beer of beers" routerLink="/detail/{{beer.id}}">
+        {{beer.name}}
+    </a>
+</div>-->
+
+<h2>Beer sorts</h2>
+<div class="beers">
+    <a *ngFor="let beer of beers" routerLink="/detail/{{beer.id}}">
+        <div class="beer">
+            <div class="beer-thumb-container">
+                <img *ngIf="beer.image_url" src="{{ beer.image_url }}" alt="thumbnail" class="beer-thumbnail" />
+                <p *ngIf="!beer.image_url">No image</p>
+            </div>
+            <div class="beer-description">
+                <p class="beer-name">{{ beer.name }}</p>
+            </div>
+        </div>
+    </a>
+</div>

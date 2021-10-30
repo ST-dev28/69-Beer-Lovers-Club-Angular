@@ -1,0 +1,11 @@
+<div *ngIf="beer">
+    <h2>{{beer.name | uppercase}} details</h2>
+    <ul class="details">
+        <li>Beer name: {{beer.name}}</li>
+        <li>Description: {{beer.description}}</li>
+        <li>abv: {{beer.abv}} %</li>
+        <li>ph: {{beer.ph}}</li>
+        <li>Food pairing: {{beer.food_pairing}}</li>
+    </ul>
+    <button (click)="goBack()">go back</button>
+</div>

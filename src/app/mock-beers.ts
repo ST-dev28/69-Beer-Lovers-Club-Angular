@@ -1,0 +1,80 @@
+import { Beer, FoodPairing } from './beer';
+
+const FOOD: FoodPairing[] = [
+{name: 'zuvis, mesa, juros gerybes'},
+];
+
+export const BEERS: Beer[] = [
+  { 
+    id: 11, 
+    name: 'Pilsner',
+    description: 'short beer description', 
+    image_url: 'https://www.heineken.com/media-us/01pfxdqq/heineken-original-bottle.png?quality=85',
+    food_pairing: FOOD,
+    abv: 5,
+    ph: 5,
+},
+ { 
+    id: 11, 
+    name: 'Kriek',
+    description: 'short beer description', 
+    image_url: 'https://www.heineken.com/media-us/01pfxdqq/heineken-original-bottle.png?quality=85',
+    food_pairing: FOOD,
+    abv: 5,
+    ph: 5,
+},
+{ 
+    id: 11, 
+    name: 'Voleas Engelman',
+    description: 'short beer description', 
+    image_url: 'https://www.heineken.com/media-us/01pfxdqq/heineken-original-bottle.png?quality=85',
+    food_pairing: FOOD,
+    abv: 4,
+    ph: 5,
+},
+{ 
+    id: 11, 
+    name: 'Heineken',
+    description: 'short beer description', 
+    image_url: 'https://www.heineken.com/media-us/01pfxdqq/heineken-original-bottle.png?quality=85',
+    food_pairing: FOOD,
+    abv: 6,
+    ph: 5,
+},
+{ 
+    id: 11, 
+    name: 'Blond',
+    description: 'short beer description', 
+    image_url: 'https://www.heineken.com/media-us/01pfxdqq/heineken-original-bottle.png?quality=85',
+    food_pairing: FOOD,
+    abv: 5,
+    ph: 5,
+},
+{ 
+    id: 11, 
+    name: 'Vilkmerges',
+    description: 'short beer description', 
+    image_url: 'https://www.heineken.com/media-us/01pfxdqq/heineken-original-bottle.png?quality=85',
+    food_pairing: FOOD,
+    abv: 2,
+    ph: 5,
+},
+{ 
+    id: 11, 
+    name: 'Lager',
+    description: 'short beer description', 
+    image_url: 'https://www.heineken.com/media-us/01pfxdqq/heineken-original-bottle.png?quality=85',
+    food_pairing: FOOD,
+    abv: 3,
+    ph: 5,
+},
+{ 
+    id: 11, 
+    name: 'Elis',
+    description: 'short beer description', 
+    image_url: 'https://www.heineken.com/media-us/01pfxdqq/heineken-original-bottle.png?quality=85',
+    food_pairing: FOOD,
+    abv: 0,
+    ph: 5,
+},
+];
