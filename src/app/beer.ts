@@ -1,6 +1,7 @@
 export interface Beer {
   id: number;
   name: string;
+  sort: string;
   description: string;
   image_url: string;
   food_pairing: string[];
