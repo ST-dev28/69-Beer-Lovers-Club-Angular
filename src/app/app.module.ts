@@ -9,6 +9,7 @@ import { BeerDetailComponent } from './beer-detail/beer-detail.component';
 import { HomeComponent } from './home/home.component';
 import { MessagesComponent } from './messages/messages.component';
 import { HeaderComponent } from './header/header.component';
+import { MainComponent } from './main/main.component';
 
 
 
@@ -20,6 +21,7 @@ import { HeaderComponent } from './header/header.component';
     HomeComponent,
     MessagesComponent,
     HeaderComponent,
+    MainComponent,
   ],
   imports: [
     BrowserModule,

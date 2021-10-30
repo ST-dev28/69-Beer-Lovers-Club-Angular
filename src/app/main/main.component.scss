@@ -1,0 +1,93 @@
+
+h2 {
+    text-align: center;
+    font-size: 48px;
+    color: rgba(153, 33, 33);
+    font-style: italic;
+    margin-top: 20px;
+}
+.filters {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding-left: 20px;
+}
+
+::ng-deep {
+    .form-infix {
+        background-color: #3f51b5;
+    }
+    .select-value,
+    .select-arrow,
+    .form-hide-placeholder .select-placeholder,
+    .form-appearance-legacy .form-label {
+        color: #fff !important;
+        opacity: 1;
+    }
+    .form-infix {
+        border-color: #fff !important;
+        border-top: none;
+        padding-left: 5px !important;
+    }
+    .form-appearance-legacy .form-label {
+        padding-left: 5px;
+    }
+    .form-appearance-legacy .form-underline {
+        background-color: #fff !important;
+    }
+}
+
+.beers {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 20px auto;
+}
+
+.beer {
+    width: 280px;
+    margin: 10px;
+    height: 330px;
+    overflow: hidden;
+    border-radius: 5px;
+    background-color: #202020;
+    box-shadow: 5px 4px 8px 5px rgb(200 152 44 / 22%);
+    transition-duration: 0.3s;
+    cursor: pointer;
+    &:hover {
+        box-shadow: 7px 6px 14px 7px rgb(200 152 44 / 46%);
+        transform: translateY(-3px);
+    }
+    &-thumb-container {
+        background-color: #000;
+        position: relative;
+        height: 180px;
+        color: #fff;
+        text-align: center;
+    }
+    &-thumbnail {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        height: 164px;
+    }
+    &-description {
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        height: 157px;
+    }
+    &-name {
+        color: rgba(153, 33, 33);
+        font-weight: 700;
+        font-size: 24px;
+        margin-bottom: 20px;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        font-style: italic;
+    }
+}

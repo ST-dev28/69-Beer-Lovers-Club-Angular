@@ -1,0 +1,14 @@
+<h2>Beer sorts</h2>
+<div class="beers">
+    <a *ngFor="let sort of sorts" routerLink="/main">
+        <div class="beer">
+            <div class="beer-thumb-container">
+                <img *ngIf="sort.image_url" src="{{ sort.image_url }}" alt="thumbnail" class="beer-thumbnail" />
+                <p *ngIf="!sort.image_url">No image</p>
+            </div>
+            <div class="beer-description">
+                <p class="beer-name">{{sort.name}}</p>
+            </div>
+        </div>
+    </a>
+</div>
