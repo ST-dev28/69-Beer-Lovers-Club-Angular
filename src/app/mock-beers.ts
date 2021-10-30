@@ -7,9 +7,9 @@ const FOOD: FoodPairing[] = [
 export const BEERS: Beer[] = [
   { 
     id: 1, 
-    name: 'Pilsner',
+    name: 'Pilsner Lager',
     description: 'short beer description about this kind of beer', 
-    image_url: 'https://www.heineken.com/media-us/01pfxdqq/heineken-original-bottle.png?quality=85',
+    image_url: 'https://www.monde-selection.com/wp-content/uploads/2020/05/_XT211287-854x1000.png',
     food_pairing: FOOD,
     abv: 5,
     ph: 5,

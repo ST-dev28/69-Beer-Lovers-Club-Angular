@@ -13,14 +13,14 @@ export class BeerService {
 
   getBeers(): Observable<Beer[]> {
     const beers = of(BEERS);
-    this.messageService.add('fethed');
+    //this.messageService.add('fetched');
     return beers;
   }
 
   getBeer(id: number): Observable<Beer> {
     // For now, assume that a beer with the specified `id` always exists.
      const beer = BEERS.find(b => b.id === id)!;
-    this.messageService.add(`fetched id: ${id}`);
+    //this.messageService.add(`fetched id: ${id}`);
     return of(beer);
   }
 }
