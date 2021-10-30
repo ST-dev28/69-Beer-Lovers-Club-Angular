@@ -11,16 +11,17 @@
     </div>-->
 
 
-
-<h2>Beer list</h2>
-<ul class="heroes">
-    <li *ngFor="let beer of beers">
-        <a routerLink="/detail/{{beer.id}}">
-            <span class="badge">{{beer.id}}</span> {{beer.name}}
-        </a>
-    </li>
-</ul>
-
+<div class="list">
+    <h2>List of beers</h2>
+    <ul>
+        <li *ngFor="let beer of beers">
+            <a routerLink="/detail/{{beer.id}}">
+                <!--<span class="badge">{{beer.id}}</span>-->
+                {{beer.name}}
+            </a>
+        </li>
+    </ul>
+</div>
 <!--<app-beer-detail [beer]="selectedBeer"></app-beer-detail>-->
 
 <!--<div *ngIf="selectedBeer">

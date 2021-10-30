@@ -1,131 +1,54 @@
 /* HeroesComponent's private CSS styles */
 
-.heroes {
-    margin: 0 0 2em 0;
-    list-style-type: none;
-    padding: 0;
-    width: 15em;
+.list {
+display: flex;
+justify-content: center;
+align-items: center;
+list-style-type: none;
+flex-direction: column;
+margin-top: 50px;
+font-style: italic;
+font-size: 24px;
+color: rgba(255, 255, 255, 0.836);
+
+
+    ul{
+        list-style-type: none;
+        margin-top: 20px;
     li {
-        cursor: pointer;
-        position: relative;
-        left: 0;
-        background-color: #EEE;
-        margin: .5em;
-        padding: .3em 0;
-        height: 1.6em;
+        display: flex;
+        justify-content: center;
+        background-color: rgba(153, 33, 33);
+        margin: 15px;
+        padding: 18px;
+        height: 60px;
         border-radius: 4px;
-        .badge {
-            display: inline-block;
-            font-size: small;
-            color: white;
-            padding: 0.8em 0.7em 0 0.7em;
-            background-color: #405061;
-            line-height: 1em;
-            position: relative;
-            left: -1px;
-            top: -4px;
-            height: 1.8em;
-            margin-right: .8em;
-            border-radius: 4px 0 0 4px;
+        text-decoration: none;
+        width: 400px;
+        letter-spacing: 2px;
+        cursor: pointer;
+
+        &:hover {
+        box-shadow: 4px 3px 11px 6px rgb(200 152 44 / 46%);
+        transform: translateY(-3px);
         }
+        a{
+            color: rgba(255, 255, 255, 0.849);
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 20px;   
+        }
+    }
+    } 
+}
+// Screen larger than 600px? 2 column
+@media screen and (min-width: 300px) {
+    li {
+        width: 200px;
     }
 }
 
-li:hover {
-    color: #2c3a41;
-    background-color: #e6e6e6;
-    left: .1em;
-}
-
-li.selected {
-    background-color: black;
-    color: white;
-}
-
-li.selected:hover {
-    background-color: #505050;
-    color: white;
-}
-
-li.selected:active {
-    background-color: black;
-    color: white;
-}
-
-input {
-    padding: 0.5rem;
-}
-
 /*
-.heroes {
-    margin: 0 0 2em 0;
-    list-style-type: none;
-    padding: 0;
-    width: 15em;
-}
-
-input {
-    display: block;
-    width: 100%;
-    padding: .5rem;
-    margin: 1rem 0;
-    box-sizing: border-box;
-}
-
-.heroes li {
-    position: relative;
-    cursor: pointer;
-}
-
-.heroes li:hover {
-    left: .1em;
-}
-
-.heroes a {
-    color: #333;
-    text-decoration: none;
-    background-color: #EEE;
-    margin: .5em;
-    padding: .3em 0;
-    height: 1.6em;
-    border-radius: 4px;
-    display: block;
-    width: 100%;
-}
-
-.heroes a:hover {
-    color: #2c3a41;
-    background-color: #e6e6e6;
-}
-
-.heroes a:active {
-    background-color: #525252;
-    color: #fafafa;
-}
-
-.heroes .badge {
-    display: inline-block;
-    font-size: small;
-    color: white;
-    padding: 0.8em 0.7em 0 0.7em;
-    background-color: #405061;
-    line-height: 1em;
-    position: relative;
-    left: -1px;
-    top: -4px;
-    height: 1.8em;
-    min-width: 16px;
-    text-align: right;
-    margin-right: .8em;
-    border-radius: 4px 0 0 4px;
-}
-
-.add-button {
-    padding: .5rem 1.5rem;
-    font-size: 1rem;
-    margin-bottom: 2rem;
-}
-
 .add-button:hover {
     color: white;
     background-color: #42545C;

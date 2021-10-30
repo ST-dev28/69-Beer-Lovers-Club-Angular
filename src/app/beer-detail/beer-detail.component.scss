@@ -1,29 +1,81 @@
 /* HeroDetailComponent's private CSS styles */
+.bgrd {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: url("../../assets/images/light.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-top: 50px;
+    font-style: italic;
+    font-size: 20px;
+    flex-wrap: wrap;
+    padding: 50px;
 
-label {
-    color: #435960;
-    font-weight: bold;
-}
+    ul {
+        list-style-type: none;
+        margin-top: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
 
-input {
-    font-size: 1em;
-    padding: .5rem;
+        li {
+            display: flex;
+            justify-content: center;
+             text-align: center;
+            background-color: rgba(0, 0, 0, 0.603);
+            margin: 15px;
+            padding: 18px;
+            height: 60px;
+            border-radius: 4px;
+            text-decoration: none;
+            width: 400px;
+            letter-spacing: 2px;
+            cursor: pointer;
+            flex-basis: max-content;
+            flex-wrap: wrap;
+            color: rgba(255, 255, 255, 0.918);
+
+                 a {
+                color: rgba(255, 255, 255, 0.678);
+                text-decoration: none;
+                font-weight: 600;
+                font-size: 20px;
+            }
+        }
+    }
+
+h2 {
+color: rgb(196, 33, 33);
+font-weight: 900;
+font-size: 30px;
+padding: 8px;
+height: 60px;
+border-radius: 4px;
+width: 400px;
+background-color: rgba(255, 255, 255, 0.733);
+justify-content: center;
+text-align: center;
+display: flex;
 }
 
 button {
     margin-top: 20px;
-    background-color: #eee;
+    background-color: black;
+    color: #fff;
     padding: 1rem;
     border-radius: 4px;
     font-size: 1rem;
+    font-weight: 600;
 }
 
 button:hover {
-    background-color: #cfd8dc;
+    &:hover {
+    box-shadow: 4px 3px 11px 6px #fff;
+    transform: translateY(-6px);
+}
 }
 
-button:disabled {
-    background-color: #eee;
-    color: #ccc;
-    cursor: auto;
 }

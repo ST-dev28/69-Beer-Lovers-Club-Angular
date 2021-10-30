@@ -5,6 +5,9 @@ body {
     padding-top: 60px;
     height: 100%;
     color: aliceblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 body * {
@@ -12,5 +15,4 @@ body * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-
 }
