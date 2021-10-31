@@ -8,12 +8,12 @@ export const SORTS: Sort[] = [
     },
     {
         id: 2,
-        name: 'Stout',
+        name: 'Elis',
         image_url: 'https://ak.picdn.net/shutterstock/videos/1069735912/thumb/1.jpg?ip=x480',
     },
     {
         id: 3,
-        name: 'Elis',
+        name: 'Lambic',
         image_url: 'https://northamptonbrewery.com/brewery/wp-content/themes/brewery2017/vids/beer.jpg',
     },
 ]

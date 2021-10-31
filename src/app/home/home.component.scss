@@ -33,9 +33,17 @@
 h2 {
     text-align: center;
     font-size: 48px;
-    color: rgba(153, 33, 33);
+    color: rgba(172, 37, 37);
     font-style: italic;
     margin-top: 20px;
+    //animation: moveIn 2s 0s cubic-bezier(.36, 0, .06, 1) alternate infinite;
+     //animation: rise 2.25s infinite ease-in-out;
+//animation-delay: calc((var(--index) - 6) * 0.225s);
+//animation: textclip 1.5s linear infinite;
+ &:hover{
+     color: rgb(221, 30, 30);
+     text-shadow: -16px 6px 15px rgb(200 152 44);
+ }
 }
 
 .beers {
@@ -83,7 +91,7 @@ h2 {
         height: 157px;
     }
     &-name {
-        color: rgba(153, 33, 33);
+        color: rgb(172, 37, 37);
         font-weight: 700;
         font-size: 24px;
         margin-bottom: 20px;
@@ -93,7 +101,36 @@ h2 {
         font-style: italic;
 
          &:hover {
-             color:rgb(216, 23, 23) ;
- }
+    color: rgb(221, 30, 30);
+
+}
+    }
+}
+@keyframes moveIn {
+    50%,
+    100% {
+        transform: translateY(0em)
+    }
+    0% {
+        opacity: 0;
+        filter: blur(10px);
+    }
+    100% {
+        opacity: 1;
+        filter: blur(0px);
+    }
+}
+
+@keyframes rise {
+    50% {
+        font-variation-settings: 'wght' var(--upper);
+        color:  hsla(180, 100%, 70%, var(--alpha-u));
+        transform: translate(0, -15%);
+    }
+}
+
+@keyframes textclip {
+    to {
+        background-position: 200% center;
     }
 }
