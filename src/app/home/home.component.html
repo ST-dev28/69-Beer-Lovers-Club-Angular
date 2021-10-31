@@ -5,17 +5,32 @@
     </a>
 </div>-->
 
+<!--<div class="filters">
+    <mat-form-field>
+        <mat-label>Sort</mat-label>
+        <mat-select panelClass="sort-select" [(ngModel)]="sort">
+            <mat-option value="name">Name</mat-option>
+            <mat-option value="-sort">Sort</mat-option>
+            <mat-option value="-alkohol">Alkohol %</mat-option>
+            <mat-option value="-food">Food pairing</mat-option>
+        </mat-select>
+    </mat-form-field>
+</div>-->
+
+
 <h2>Beers</h2>
 <div class="beers">
-    <a *ngFor="let beer of beers" routerLink="/detail/{{beer.id}}">
-        <div class="beer">
-            <div class="beer-thumb-container">
-                <img *ngIf="beer.image_url" src="{{ beer.image_url }}" alt="thumbnail" class="beer-thumbnail" />
-                <p *ngIf="!beer.image_url">No image</p>
+    <ng-container *ngFor="let beer of beers">
+        <a routerLink="/detail/{{beer.id}}">
+            <div class="beer">
+                <div class="beer-thumb-container">
+                    <img *ngIf="beer.image_url" src="{{ beer.image_url }}" alt="thumbnail" class="beer-thumbnail" />
+                    <p *ngIf="!beer.image_url">No image</p>
+                </div>
+                <div class="beer-description">
+                    <p class="beer-name">{{ beer.name }}</p>
+                </div>
             </div>
-            <div class="beer-description">
-                <p class="beer-name">{{ beer.name }}</p>
-            </div>
-        </div>
-    </a>
+        </a>
+    </ng-container>
 </div>

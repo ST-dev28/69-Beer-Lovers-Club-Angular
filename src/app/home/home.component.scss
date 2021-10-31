@@ -1,12 +1,5 @@
 /* DashboardComponent's private CSS styles */
 
-h2 {
-    text-align: center;
-    font-size: 48px;
-    color: rgba(153, 33, 33);
-    font-style: italic;
-    margin-top: 20px;
-}
 .filters {
     max-width: 1200px;
     margin: 20px auto;
@@ -14,27 +7,35 @@ h2 {
 }
 
 ::ng-deep {
-    .form-infix {
+    .mat-form-field-infix {
         background-color: #3f51b5;
     }
-    .select-value,
-    .select-arrow,
-    .form-hide-placeholder .select-placeholder,
-    .form-appearance-legacy .form-label {
+    .mat-select-value,
+    .mat-select-arrow,
+    .mat-form-field-hide-placeholder .mat-select-placeholder,
+    .mat-form-field-appearance-legacy .mat-form-field-label {
         color: #fff !important;
         opacity: 1;
     }
-    .form-infix {
+    .mat-form-field-infix {
         border-color: #fff !important;
         border-top: none;
         padding-left: 5px !important;
     }
-    .form-appearance-legacy .form-label {
+    .mat-form-field-appearance-legacy .mat-form-field-label {
         padding-left: 5px;
     }
-    .form-appearance-legacy .form-underline {
+    .mat-form-field-appearance-legacy .mat-form-field-underline {
         background-color: #fff !important;
     }
+}
+
+h2 {
+    text-align: center;
+    font-size: 48px;
+    color: rgba(153, 33, 33);
+    font-style: italic;
+    margin-top: 20px;
 }
 
 .beers {
@@ -90,5 +91,9 @@ h2 {
         text-overflow: ellipsis;
         overflow: hidden;
         font-style: italic;
+
+         &:hover {
+             color:rgb(216, 23, 23) ;
+ }
     }
 }

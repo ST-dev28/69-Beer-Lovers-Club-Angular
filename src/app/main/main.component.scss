@@ -83,11 +83,15 @@ h2 {
     &-name {
         color: rgba(153, 33, 33);
         font-weight: 700;
-        font-size: 24px;
+        font-size: 28px;
         //margin-bottom: 20px;
         white-space: nowrap;
         text-overflow: ellipsis;
         overflow: hidden;
         font-style: italic;
+
+         &:hover {
+     color: rgb(216, 23, 23);
     }
+}
 }
