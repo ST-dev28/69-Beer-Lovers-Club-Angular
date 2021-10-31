@@ -10,11 +10,15 @@ import { BeerService } from '../beer.service';
 export class HomeComponent implements OnInit {
   [x: string]: any;
   beers: Beer[] = [];
+  filter:string='';
 
   constructor(private beerService: BeerService) { }
 
   ngOnInit() {
     this.getBeers();
+    this.beerService.filterSub.subscribe((filter)=>{
+      this.filter=filter;
+    })
   }
 
   getBeers(): void {

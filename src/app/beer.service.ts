@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { Observable, of } from 'rxjs';
+import { BehaviorSubject, Observable, of, Subject } from 'rxjs';
 import { map } from 'rxjs/operators';
 import { Beer } from './beer';
 import { BEERS } from './mock-beers';
@@ -9,6 +9,7 @@ import { MessageService } from './message.service';
   providedIn: 'root'
 })
 export class BeerService {
+  filterSub:BehaviorSubject<string>=new BehaviorSubject<string>('');
 
   constructor(private messageService: MessageService) { }
 

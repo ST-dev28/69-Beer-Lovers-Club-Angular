@@ -1,35 +1,3 @@
-/* DashboardComponent's private CSS styles */
-
-.filters {
-    max-width: 1200px;
-    margin: 20px auto;
-    padding-left: 20px;
-}
-
-::ng-deep {
-    .mat-form-field-infix {
-        background-color: #3f51b5;
-    }
-    .mat-select-value,
-    .mat-select-arrow,
-    .mat-form-field-hide-placeholder .mat-select-placeholder,
-    .mat-form-field-appearance-legacy .mat-form-field-label {
-        color: #fff !important;
-        opacity: 1;
-    }
-    .mat-form-field-infix {
-        border-color: #fff !important;
-        border-top: none;
-        padding-left: 5px !important;
-    }
-    .mat-form-field-appearance-legacy .mat-form-field-label {
-        padding-left: 5px;
-    }
-    .mat-form-field-appearance-legacy .mat-form-field-underline {
-        background-color: #fff !important;
-    }
-}
-
 h2 {
     text-align: center;
     font-size: 48px;
@@ -40,19 +8,17 @@ h2 {
     text-shadow: -15px 5px 20px rgb(200 152 44);
     transition: all 0.25s ease-out;
 
-        &:hover {
-        color: rgb(224, 26, 26);
-        //text-shadow: -16px 6px 15px rgb(200 152 44);
-        text-shadow: 0 0 5px #ffa500,
-                        0 0 15px #ffa500,
-                        0 0 20px #ffa500,
-                        0 0 40px #ffa500,
-                        0 0 60px #ff0000,
-                        0 0 10px #ff8d00,
-                        0 0 98px #ff0000;
+    &:hover {
+    color: rgb(224, 26, 26);
+    text-shadow: 0 0 5px #ffa500,
+                0 0 15px #ffa500,
+                0 0 20px #ffa500,
+                0 0 40px #ffa500,
+                0 0 60px #ff0000,
+                0 0 10px #ff8d00,
+                0 0 98px #ff0000;
     }
 }
-
 
 .beers {
     display: flex;
@@ -109,8 +75,8 @@ h2 {
         font-style: italic;
 
          &:hover {
-    color: rgb(221, 30, 30);
+        color: rgb(221, 30, 30);
 
-}
+        }
     }
 }

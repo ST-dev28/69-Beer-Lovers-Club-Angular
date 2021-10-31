@@ -1,5 +1,4 @@
 /* HeroesComponent's private CSS styles */
-
 h2{
     animation: neon 5s ease-in-out infinite alternate;
 }
@@ -49,27 +48,6 @@ color: rgba(255, 255, 255, 0.836);
         width: 200px;
     }
 }
-
-/*
-.add-button:hover {
-    color: white;
-    background-color: #42545C;
-}
-
-button.delete {
-    position: absolute;
-    left: 210px;
-    top: 5px;
-    background-color: white;
-    color: #525252;
-    font-size: 1.1rem;
-    padding: 1px 10px 3px 10px;
-}
-
-button.delete:hover {
-    background-color: #525252;
-    color: white;
-}*/
 
 @keyframes neon {
     from {

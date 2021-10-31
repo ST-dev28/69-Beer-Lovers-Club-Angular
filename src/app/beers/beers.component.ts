@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { Beer, FoodPairing} from '../beer';
-//import { BEERS } from '../mock-beers';
 import { BeerService } from '../beer.service';
 
 @Component({
@@ -10,8 +9,6 @@ import { BeerService } from '../beer.service';
   styleUrls: ['./beers.component.scss']
 })
 export class BeersComponent implements OnInit {
-
-//beers = BEERS;
  beers: Beer[] = [];
  sort?:string|null;
 

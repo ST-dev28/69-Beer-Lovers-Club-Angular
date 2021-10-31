@@ -1,19 +1,6 @@
-<!--<div class="filters">
-    <mat-form-field>
-        <mat-label>Sort</mat-label>
-        <mat-select panelClass="sort-select" [(ngModel)]="sort">
-            <mat-option value="name">Name</mat-option>
-            <mat-option value="-sort">Sort</mat-option>
-            <mat-option value="-alkohol">Alkohol %</mat-option>
-            <mat-option value="-food">Food pairing</mat-option>
-        </mat-select>
-    </mat-form-field>
-</div>-->
-
-
 <h2>Get your favourite beer</h2>
 <div class="beers">
-    <ng-container *ngFor="let beer of beers">
+    <ng-container *ngFor="let beer of beers|search:filter">
         <a routerLink="/detail/{{beer.id}}">
             <div class="beer">
                 <div class="beer-thumb-container">

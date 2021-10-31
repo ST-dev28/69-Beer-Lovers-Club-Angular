@@ -7,7 +7,7 @@
 
     <form class="search-form" #form="ngForm" (ngSubmit)="onSubmit(form)">
         <span class="logo" routerLink="/">BeerLoversClub</span>
-        <input class="search-input" name="search" ngModel placeholder="Search..." />
+        <input class="search-input" name="search" [(ngModel)]="searchText" placeholder="Search..." />
         <button class="search-button">Search</button>
     </form>
 </div>

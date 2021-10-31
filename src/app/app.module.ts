@@ -16,10 +16,7 @@ import { HomeComponent } from './home/home.component';
 import { MessagesComponent } from './messages/messages.component';
 import { HeaderComponent } from './header/header.component';
 import { MainComponent } from './main/main.component';
-
-
-
-
+import { SearchPipe } from './search.pipe';
 
 @NgModule({
   declarations: [
@@ -30,6 +27,7 @@ import { MainComponent } from './main/main.component';
     MessagesComponent,
     HeaderComponent,
     MainComponent,
+    SearchPipe,
   ],
   imports: [
     BrowserModule,
