@@ -36,8 +36,8 @@ this.beers.forEach((item) => {
   }
 });
 return sorting;
-  }*/
-
+  }
+*/
   getBeers(): void {
     this.beerService.getBeers()
       .subscribe(beers => this.beers = beers);
