@@ -13,8 +13,6 @@ margin-top: 50px;
 font-style: italic;
 font-size: 24px;
 color: rgba(255, 255, 255, 0.836);
-
-
     ul{
         list-style-type: none;
         margin-top: 20px;
@@ -44,6 +42,7 @@ color: rgba(255, 255, 255, 0.836);
     }
     } 
 }
+
 // Screen larger than 600px? 2 column
 @media screen and (min-width: 300px) {
     li {

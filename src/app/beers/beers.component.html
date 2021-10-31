@@ -1,27 +1,16 @@
-<!--<h2>Beers list</h2>
-<ul class="beers">
-    <li *ngFor="let beer of beers" [class.selected]="beer === selectedBeer" (click)="onSelect(beer)">Beer name: {{beer.name}}</li>
-</ul>-->
-
-<!--<h2>{{selectedBeer.name | uppercase}} Details</h2>
-    <div><span>id: </span>{{selectedBeer.id}}</div>
-    <div>
-        <label for="hero-name">Hero name: </label>
-        <input id="hero-name" [(ngModel)]="selectedBeer.name" placeholder="name">
-    </div>-->
-
-<div class="list">
-    <h2>List of beers</h2>
-    <ul>
-        <li *ngFor="let beer of beers">
-            <a routerLink="/detail/{{beer.id}}">
-                <!--<span class="badge">{{beer.id}}</span>-->
-                {{beer.name}}
-            </a>
-        </li>
-    </ul>
+<div class="background">
+    <div class="list">
+        <h2>List of beers</h2>
+        <ul>
+            <li *ngFor="let beer of beers">
+                <a routerLink="/detail/{{beer.id}}">
+                    <!--<span class="badge">{{beer.id}}</span>-->
+                    {{beer.name}}
+                </a>
+            </li>
+        </ul>
+    </div>
 </div>
-
 <!--<app-beer-detail [beer]="selectedBeer"></app-beer-detail>-->
 
 <!--<div *ngIf="selectedBeer">
