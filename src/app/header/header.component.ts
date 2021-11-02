@@ -16,7 +16,7 @@ export class HeaderComponent implements OnInit {
   ngOnInit(): void {
   }
   onSubmit(form: NgForm) {
-  
+  // po nukreipimo filtruojam toliau
     this.router.navigate(['/home']).then(()=>{
        this.beerService.filterSub.next(form.value.search);
     });

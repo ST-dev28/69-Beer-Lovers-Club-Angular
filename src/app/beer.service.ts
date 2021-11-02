@@ -9,6 +9,8 @@ import { MessageService } from './message.service';
   providedIn: 'root'
 })
 export class BeerService {
+  // subject naudojamas, kai reikia permesti info is vieno komponento i kita
+  // BehaviuorSubject issaugo buvusia reisksme ir atitinkamai grazina kita reiksme, jei buvo siusta tokia
   filterSub:BehaviorSubject<string>=new BehaviorSubject<string>('');
 
   constructor(private messageService: MessageService) { }
