@@ -15,12 +15,10 @@ export class BeersComponent implements OnInit {
   constructor(private beerService: BeerService, private route:ActivatedRoute) { }
 
   ngOnInit() {
-   
-   
+    
     if (this.route.snapshot.paramMap.get("sort")){
       this.sort=this.route.snapshot.paramMap.get("sort");
-    }
-    
+    }  
    this.getBeers();
   }
 

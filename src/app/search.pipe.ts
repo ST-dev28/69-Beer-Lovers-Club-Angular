@@ -18,11 +18,11 @@ export class SearchPipe implements PipeTransform {
 
     return items.filter(it => {
 
-      let rezult= it.name.toLocaleLowerCase().includes(searchText);
-      if (rezult) return true;
-      rezult= it.description.toLocaleLowerCase().includes(searchText);
+      let result= it.name.toLocaleLowerCase().includes(searchText);
+      if (result) return true;
+      result= it.description.toLocaleLowerCase().includes(searchText);
 
-      return rezult;
+      return result;
     });
   }
 }
